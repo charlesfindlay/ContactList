@@ -16,4 +16,8 @@ class ContactList {
         self.name = name
         self.contacts = []
     }
+    
+    func addContact(newContact: Contact) {
+        self.contacts.append(newContact)    
+    }
 }
