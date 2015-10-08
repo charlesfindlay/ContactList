@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class ContactList {
+    var name: String
+    var contacts: [Contact]
+    
+    init(name: String) {
+        self.name = name
+        self.contacts = []
+    }
+}
