@@ -25,5 +25,6 @@ class ContactDetailViewController: UIViewController {
     @IBAction func deleteButtonPressed(sender: AnyObject) {
         myContacts.deleteContact(myContacts, deleteContact: contactToShowDetails)
         self.navigationController?.popToRootViewControllerAnimated(true)
+        
     }
 }

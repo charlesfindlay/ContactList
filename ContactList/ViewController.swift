@@ -22,7 +22,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contactTableView.reloadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
