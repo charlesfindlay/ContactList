@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var myContacts = ContactList(name: "Bootcamp Students")
+    var detailCell: Contact!
     
     
     @IBOutlet weak var studentName: UITextField!
@@ -44,6 +45,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        detailCell = self.myContacts.contacts[indexPath.row]
+        self.performSegueWithIdentifier("showDetails", sender: indexPath)
+    }
+    
 
     @IBAction func submitStudentInfo(sender: AnyObject) {
         let newName = studentName.text!
@@ -57,6 +63,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! ContactDetailViewController
+        vc.contactToShowDetails = detailCell
+    }
     
 }
 

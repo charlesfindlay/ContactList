@@ -91,7 +91,7 @@
                         <outlet property="studentEmailAddress" destination="6EF-11-lR5" id="jzX-a7-fYn"/>
                         <outlet property="studentName" destination="Xth-hp-b3b" id="UqD-Qb-NgL"/>
                         <outlet property="studentPhoneNumber" destination="NH6-oB-l0i" id="AZk-xr-yWs"/>
-                        <segue destination="w2y-Dj-1a1" kind="push" id="dnN-ng-cZU"/>
+                        <segue destination="w2y-Dj-1a1" kind="push" identifier="showDetails" id="dnN-ng-cZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,13 +14,11 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var contactPhoneNumber: UILabel!
     @IBOutlet weak var contactEmailAddress: UILabel!
     
-    var name: String!
-    var phoneNumber: String!
-    var emailAddress: String!
+    var contactToShowDetails: Contact!
     
     override func viewWillAppear(animated: Bool) {
-        contactName.text = name
-        contactPhoneNumber.text = phoneNumber
-        contactEmailAddress.text = emailAddress
+        contactName.text = contactToShowDetails.name
+        contactPhoneNumber.text = contactToShowDetails.phoneNumber
+        contactEmailAddress.text = contactToShowDetails.email
     }
 }
