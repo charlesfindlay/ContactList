@@ -14,6 +14,7 @@
 		3F9F64F81BC6DBF5001E409E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F64F61BC6DBF5001E409E /* LaunchScreen.storyboard */; };
 		652064331BC6E0C00094A932 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652064321BC6E0C00094A932 /* Contact.swift */; settings = {ASSET_TAGS = (); }; };
 		652064351BC6E2B20094A932 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652064341BC6E2B20094A932 /* ContactList.swift */; settings = {ASSET_TAGS = (); }; };
+		652064381BC6F26A0094A932 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652064371BC6F26A0094A932 /* ContactDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3F9F64F91BC6DBF5001E409E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652064321BC6E0C00094A932 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		652064341BC6E2B20094A932 /* ContactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		652064371BC6F26A0094A932 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				652064341BC6E2B20094A932 /* ContactList.swift */,
 				652064321BC6E0C00094A932 /* Contact.swift */,
 				3F9F64EF1BC6DBF5001E409E /* ViewController.swift */,
+				652064371BC6F26A0094A932 /* ContactDetailViewController.swift */,
 				3F9F64F11BC6DBF5001E409E /* Main.storyboard */,
 				3F9F64F41BC6DBF5001E409E /* Assets.xcassets */,
 				3F9F64F61BC6DBF5001E409E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				652064351BC6E2B20094A932 /* ContactList.swift in Sources */,
+				652064381BC6F26A0094A932 /* ContactDetailViewController.swift in Sources */,
 				3F9F64F01BC6DBF5001E409E /* ViewController.swift in Sources */,
 				652064331BC6E0C00094A932 /* Contact.swift in Sources */,
 				3F9F64EE1BC6DBF5001E409E /* AppDelegate.swift in Sources */,
