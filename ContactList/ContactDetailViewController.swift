@@ -15,10 +15,15 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var contactEmailAddress: UILabel!
     
     var contactToShowDetails: Contact!
+    var myContacts: ContactList!
     
     override func viewWillAppear(animated: Bool) {
         contactName.text = contactToShowDetails.name
         contactPhoneNumber.text = contactToShowDetails.phoneNumber
         contactEmailAddress.text = contactToShowDetails.email
+    }
+    @IBAction func deleteButtonPressed(sender: AnyObject) {
+        myContacts.deleteContact(myContacts, deleteContact: contactToShowDetails)
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
 }

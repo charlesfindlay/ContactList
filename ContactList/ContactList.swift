@@ -18,6 +18,14 @@ class ContactList {
     }
     
     func addContact(newContact: Contact) {
-        self.contacts.append(newContact)    
+        self.contacts.append(newContact)
+    }
+    
+    func deleteContact(contactList: ContactList,deleteContact: Contact) {
+      
+        if let i = contactList.contacts.indexOf({$0.name == deleteContact.name}) {
+            contactList.contacts.removeAtIndex(i)
+        }
     }
 }
+    

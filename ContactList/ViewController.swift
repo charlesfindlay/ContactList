@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        contactTableView.reloadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -60,12 +61,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         myContacts.addContact(newContact)
         print(myContacts.contacts.count)
         contactTableView.reloadData()
+        studentName.text = ""
+        studentPhoneNumber.text = ""
+        studentEmailAddress.text = ""
         
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! ContactDetailViewController
         vc.contactToShowDetails = detailCell
+        vc.myContacts = myContacts
     }
     
 }
